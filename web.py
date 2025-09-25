@@ -20,9 +20,9 @@ topic = st.selectbox("Select data to view", ("Temperature", "Sky Conditions"))
 
 if place.strip():
     if days == 1:
-        st.subheader(f"{topic} for the next 24 hours in {place}")
+        st.subheader(f"{topic} for the next 24 hours in {place.title()}")
     else:
-        st.subheader(f"{topic} for the next {days} days in {place}")
+        st.subheader(f"{topic} for the next {days} days in {place.title()}")
 
 
 if place:
