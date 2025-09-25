@@ -18,10 +18,11 @@ days = st.slider(
 )
 topic = st.selectbox("Select data to view", ("Temperature", "Sky Conditions"))
 
-if days == 1:
-    st.subheader(f"{topic} for the next 24 hours in {place}")
-else:
-    st.subheader(f"{topic} for the next {days} days in {place}")
+if place.strip():
+    if days == 1:
+        st.subheader(f"{topic} for the next 24 hours in {place}")
+    else:
+        st.subheader(f"{topic} for the next {days} days in {place}")
 
 
 if place:
