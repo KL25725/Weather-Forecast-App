@@ -1,5 +1,5 @@
 # Weather Forecast App 🌤️
-Live Demo: [Try it here](https://kl-weather-forecast-app.streamlit.app/)
+Live Demo: [Try it here](https://kl-weather-forecast-demo.streamlit.app/)
 
 A simple Streamlit app built with Python that fetches weather forecast data from OpenWeatherMap and visualizes temperature trends or sky conditions.
 
