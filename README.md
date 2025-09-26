@@ -1,4 +1,5 @@
 # Weather Forecast App 🌤️
+Live Demo: [Try it here](https://kl-weather-forecast-app.streamlit.app/)
 
 A simple Streamlit app built with Python that fetches weather forecast data from OpenWeatherMap and visualizes temperature trends or sky conditions.
 
@@ -7,7 +8,10 @@ A simple Streamlit app built with Python that fetches weather forecast data from
 - Temperature line chart using Plotly
 - Weather condition icons (Clear, Clouds, Rain, Snow)
 - Error handling for invalid city names and API keys
-- Use `.env` to keep API key secured
+- Use `.env` (local), Streamlit Secrets (cloud) to keep API key secured
+
+> Note: To run locally, you’ll need a free OpenWeatherMap API key.  
+> If you just want to see the app in action, check the **Live Demo** above or the screenshots below.
 
 ## Requirements
 - Python 3.9+
@@ -46,7 +50,7 @@ OPENWEATHER_API_KEY=your_api_key_here
 ```
 
 ## Run
-Start the Streamlit app:
+Start the Streamlit app locally:
 ```bash
 streamlit run app.py
 ```
@@ -58,6 +62,7 @@ weather-forecast-app/
 │
 ├── backend.py        # Handles API requests to OpenWeatherMap
 ├── app.py            # Streamlit frontend
+├── requirements.in   # Direct dependencies
 ├── requirements.txt  # Python dependencies
 ├── .env.example      # Example environment file (do not commit .env)
 ├── .gitignore        # ignore .env
@@ -84,8 +89,9 @@ weather-forecast-app/
 The base version included a hardcoded API key, minimal error handling, and an initial Streamlit interface.  
 
 I extended and polished the app by:
-- Securing the API key with `.env` and `python-dotenv`
-- Improved error handling (invalid city, API errors)
-- Requesting weather data in **metric units (°C)** via API parameters instead of manual scaling
+- Securing the API key with `.env` locally and Streamlit Secrets for deployment
+- Improved error handling with clear messages for missing API key, invalid city names, and API errors
+- Requesting weather data in metric units (°C) via API parameters instead of manual scaling
 - Improving the UI (Clearer title, caption, and weather icons)
 - Organizing the repo with `.gitignore`, `.env.example`, `requirements.txt`, and a structured README
+- Deployed the app on Streamlit Cloud, making it available as a live demo
