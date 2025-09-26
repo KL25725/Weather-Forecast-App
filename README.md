@@ -68,13 +68,16 @@ weather-forecast-app/
 
 ### Dashboard
 ![Dashboard](images/demo.png)
+
 *Main dashboard with place input, days slider, and data selector.*
 
 ### Temperature Chart
 ![Temperature Chart](images/temp_chart.png)
+
 *Temperature forecast (1 day) for Ottawa, shown as a line graph.*
 ### Sky Conditions
 ![Sky Conditions](images/sky_conditions.png)
+
 *Sky condition forecast (2 days) for Ottawa, with weather icons.*
 
 ## Acknowledgements
