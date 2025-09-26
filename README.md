@@ -3,6 +3,8 @@ Live Demo: [Try it here](https://kl-weather-forecast-app.streamlit.app/)
 
 A simple Streamlit app built with Python that fetches weather forecast data from OpenWeatherMap and visualizes temperature trends or sky conditions.
 
+This project began as a guided exercise from *The Python Mega Course* and was then extended and refined by me, with additional features, error handling, and deployment.
+
 ## Features
 - 1–5 day forecast
 - Temperature line chart using Plotly
@@ -86,12 +88,13 @@ weather-forecast-app/
 *Sky condition forecast (2 days) for Ottawa, with weather icons.*
 
 ## Acknowledgements
+This project was originally built while following *The Python Mega Course* by Ardit Sulce.
 The base version included a hardcoded API key, minimal error handling, and an initial Streamlit interface.  
 
 I extended and polished the app by:
 - Securing the API key with `.env` locally and Streamlit Secrets for deployment
-- Improved error handling with clear messages for missing API key, invalid city names, and API errors
+- Improving error handling with clear messages for missing API key, invalid city names, and API errors
 - Requesting weather data in metric units (°C) via API parameters instead of manual scaling
-- Improving the UI (Clearer title, caption, and weather icons)
-- Organizing the repo with `.gitignore`, `.env.example`, `requirements.txt`, and a structured README
-- Deployed the app on Streamlit Cloud, making it available as a live demo
+- Refining the UI (Clearer title, caption, and weather icons)
+- Organizing the project with `.gitignore`, `.env.example`, `requirements.txt`, and a structured README
+- Deploying the app on Streamlit Cloud, making it available as a live demo
