@@ -9,7 +9,7 @@ from backend import get_data
 
 st.title("Weather Forecast Dashboard 🌤️")
 
-place = st.text_input("Place:")
+place = st.text_input("Place:", help="Enter a City or Country name.")
 days = st.slider(
     "Forecast Days:",
     min_value=1,
