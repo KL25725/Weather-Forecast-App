@@ -3,12 +3,13 @@ Backend module for Weather App
 Fetches forecast data from OpenWeatherMap API.
 """
 
+import streamlit as st
 from dotenv import load_dotenv
 import os
 import requests
 
 load_dotenv()
-API_KEY = os.getenv("OPENWEATHER_API_KEY")
+API_KEY = os.getenv("OPENWEATHER_API_KEY") or st.secrets.get("OPENWEATHER_API_KEY")
 
 def get_data(place, forecast_days=None):
     """
